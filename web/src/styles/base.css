@@ -1,0 +1,106 @@
+/* 全局基础:reset 补充 + 排版 + 滚动条 + 通用工具类 */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--ba-bg);
+	color: var(--ba-text);
+	font-size: 14px;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+	color: var(--ba-brand);
+	text-decoration: none;
+}
+
+/* 细滚动条(现代 admin 观感关键) */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--ba-border-strong);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--ba-text-tertiary);
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* ── 通用工具类 ─────────────────────────────── */
+.ba-page {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.ba-page-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+.ba-page-header .ba-title {
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0;
+}
+.ba-page-header .ba-sub {
+	margin: 2px 0 0;
+	font-size: 12px;
+	color: var(--ba-text-tertiary);
+}
+
+.ba-card {
+	background: var(--ba-bg-elevated);
+	border: 1px solid var(--ba-border);
+	border-radius: var(--ba-radius-lg);
+	box-shadow: var(--ba-shadow-sm);
+}
+.ba-card-padded {
+	padding: 16px;
+}
+
+.ba-empty-tip {
+	color: var(--ba-text-tertiary);
+	font-size: 13px;
+	text-align: center;
+	padding: 48px 0;
+}
+
+/* 分区级行内错误(批 BD #5,需求单「表格加载态与统一交互」2026-09-29):
+ * 错误≠空——错误态必须可区分于空态,文案含原因;重试入口由消费方决定
+ * (居中版用 BaEmpty state="error",行内版直接用本类,见指南 §48) */
+.ba-inline-error {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--ba-danger);
+	font-size: 12px;
+	line-height: 1.4;
+}
+
+/* 路由切换进度条配色 */
+#nprogress .bar {
+	background: var(--ba-brand) !important;
+	height: 2.5px !important;
+}
+#nprogress .peg {
+	box-shadow:
+		0 0 10px var(--ba-brand), 0 0 5px var(--ba-brand) !important;
+}

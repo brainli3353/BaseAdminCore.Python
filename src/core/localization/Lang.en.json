@@ -1,0 +1,41 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "empty": "No data",
+    "confirm": "OK",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "reset": "Reset",
+    "export": "Export",
+    "import": "Import",
+    "success": "Success",
+    "fail": "Failed",
+    "unauthorized": "Unauthorized",
+    "forbidden": "Forbidden",
+    "not_found": "Not found",
+    "param_invalid": "Invalid parameter",
+    "server_error": "Internal server error",
+    "conflict": "Conflict"
+  },
+  "login": {
+    "title": "Sign in",
+    "account": "Account",
+    "password": "Password",
+    "otp": "One-time code",
+    "submit": "Sign in",
+    "bindOtp": "Bind authenticator"
+  },
+  "menu": {
+    "dashboard": "Dashboard",
+    "sys": "System",
+    "config": "Configuration",
+    "monitor": "Monitoring",
+    "logAudit": "Audit Logs",
+    "messageCenter": "Messages",
+    "tooling": "Tooling"
+  }
+}

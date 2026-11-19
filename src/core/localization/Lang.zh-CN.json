@@ -1,0 +1,41 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "empty": "暂无数据",
+    "confirm": "确定",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "add": "新增",
+    "search": "查询",
+    "reset": "重置",
+    "export": "导出",
+    "import": "导入",
+    "success": "操作成功",
+    "fail": "操作失败",
+    "unauthorized": "未登录或登录已失效",
+    "forbidden": "无权限",
+    "not_found": "数据不存在",
+    "param_invalid": "参数错误",
+    "server_error": "系统内部错误",
+    "conflict": "数据冲突"
+  },
+  "login": {
+    "title": "登录",
+    "account": "账号",
+    "password": "密码",
+    "otp": "动态校验码",
+    "submit": "登录",
+    "bindOtp": "绑定动态校验器"
+  },
+  "menu": {
+    "dashboard": "工作台",
+    "sys": "系统管理",
+    "config": "系统配置",
+    "monitor": "运维监控",
+    "logAudit": "日志审计",
+    "messageCenter": "消息通知",
+    "tooling": "工具开发"
+  }
+}

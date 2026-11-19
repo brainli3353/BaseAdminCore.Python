@@ -1,0 +1,64 @@
+/* ─────────────────────────────────────────────────────────────
+ * 设计令牌(亮色)。品牌色 #4F46E5(靛蓝)——与 Element Plus 默认
+ * 主色 #409EFF 区分,消除"模板感"。全部布局/色彩变量集中于此,
+ * 暗色覆盖见 dark.css;页面禁止散落硬编码色值。
+ * ───────────────────────────────────────────────────────────── */
+:root {
+	/* 品牌色阶 */
+	--ba-brand: #4f46e5;
+	--ba-brand-hover: #6366f1;
+	--ba-brand-active: #4338ca;
+	--ba-brand-soft: #eef2ff; /* 选中底/强调底 */
+	--ba-brand-soft-border: #c7d2fe;
+
+	/* 功能色 */
+	--ba-success: #10b981;
+	--ba-warning: #f59e0b;
+	--ba-danger: #ef4444;
+	--ba-info: #64748b;
+
+	/* 中性色(冷灰系,替代纯黑灰) */
+	--ba-bg: #f5f6f8; /* 应用底 */
+	--ba-bg-elevated: #ffffff; /* 卡片/弹层 */
+	--ba-bg-hover: #f1f5f9;
+	--ba-border: #e2e8f0;
+	--ba-border-strong: #cbd5e1;
+	--ba-text: #0f172a;
+	--ba-text-secondary: #475569;
+	--ba-text-tertiary: #94a3b8;
+	--ba-text-disabled: #cbd5e1;
+
+	/* 布局度量 */
+	--ba-topbar-h: 56px;
+	--ba-sidebar-w: 220px;
+	--ba-sidebar-w-collapsed: 64px;
+	--ba-tagbar-h: 38px;
+	--ba-content-padding: 16px;
+
+	/* 形态 */
+	--ba-radius-sm: 6px;
+	--ba-radius: 10px;
+	--ba-radius-lg: 14px;
+	--ba-shadow-sm: 0 1px 2px rgb(15 23 42 / 4%);
+	--ba-shadow: 0 4px 16px -2px rgb(15 23 42 / 8%);
+	--ba-shadow-lg: 0 12px 32px -4px rgb(15 23 42 / 14%);
+
+	/* 侧边栏(默认深色导航,亮/暗模式通用——现代 admin 主流做法) */
+	--ba-nav-bg: #111827;
+	--ba-nav-bg-active: #1f2937;
+	--ba-nav-text: #9ca3af;
+	--ba-nav-text-active: #f9fafb;
+	--ba-nav-border: #1f2937;
+
+	/* 覆盖 Element Plus 主题变量(与品牌令牌同值,组件直接继承) */
+	--el-color-primary: var(--ba-brand);
+	--el-color-primary-light-3: var(--ba-brand-hover);
+	--el-color-primary-light-5: #a5b4fc;
+	--el-color-primary-light-7: #c7d2fe;
+	--el-color-primary-light-8: #e0e7ff;
+	--el-color-primary-light-9: var(--ba-brand-soft);
+	--el-color-primary-dark-2: var(--ba-brand-active);
+	--el-border-radius-base: var(--ba-radius-sm);
+	--el-font-family:
+		'Inter', 'PingFang SC', 'Microsoft YaHei', system-ui, -apple-system, sans-serif;
+}

@@ -1,0 +1,22 @@
+/* 暗色模式覆盖:html.dark 时生效(与 Element Plus 官方暗色变量协同)。
+ * EP 自带 [data-theme=dark]/.dark 的 --el-* 变量由 element-plus/theme-chalk/dark.css 提供,
+ * 此处只覆盖本框架令牌与导航色,避免两套变量漂移。 */
+html.dark {
+	--ba-bg: #0b1020;
+	--ba-bg-elevated: #131a2e;
+	--ba-bg-hover: #1c2440;
+	--ba-border: #24304f;
+	--ba-border-strong: #334166;
+	--ba-text: #e6e9f2;
+	--ba-text-secondary: #a8b0c5;
+	--ba-text-tertiary: #6b7490;
+	--ba-text-disabled: #3d4560;
+	--ba-brand-soft: #1e1b4b;
+	--ba-brand-soft-border: #3730a3;
+	--ba-nav-bg: #0d1226;
+	--ba-nav-bg-active: #161d38;
+	--ba-nav-border: #1a2140;
+	--ba-shadow-sm: 0 1px 2px rgb(0 0 0 / 30%);
+	--ba-shadow: 0 4px 16px -2px rgb(0 0 0 / 40%);
+	--ba-shadow-lg: 0 12px 32px -4px rgb(0 0 0 / 55%);
+}
